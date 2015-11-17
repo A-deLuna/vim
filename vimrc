@@ -20,6 +20,7 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'rust-lang/rust.vim'
 Plugin 'simnalamburt/vim-mundo'
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'digitaltoad/vim-jade'
 call vundle#end()
 
 filetype plugin indent on
