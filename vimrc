@@ -30,9 +30,22 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:delimitMate_expand_cr = 1
 
+function TabToggle()
+  if &expandtab
+    set shiftwidth=8
+    set softtabstop=0
+    set noexpandtab
+  else
+    set shiftwidth=2
+    set softtabstop=2
+    set expandtab
+  endif
+endfunction
+
 let mapleader = "\<Space>"
 nnoremap <leader><space> :nohlsearch<CR>
 tnoremap <Esc> <C-\><C-n>
 nnoremap <leader>g :GundoToggle<CR>
 nnoremap <leader>l :set list!<CR>
+nmap <leader>t mz:execute TabToggle()<CR>'z
 "set pastetoggle=<leader>p
