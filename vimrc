@@ -34,4 +34,5 @@ let mapleader = "\<Space>"
 nnoremap <leader><space> :nohlsearch<CR>
 tnoremap <Esc> <C-\><C-n>
 nnoremap <leader>g :GundoToggle<CR>
+nnoremap <leader>l :set list!<CR>
 "set pastetoggle=<leader>p
